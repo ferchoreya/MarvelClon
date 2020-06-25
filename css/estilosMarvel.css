@@ -1,0 +1,119 @@
+/* Variables */
+:root {
+    --colorNegro: black;
+    --botonRojo: #e62429;
+    --botonRojoHover: #9f0013;
+    --colorBlanco: #fff;
+}
+/* Recomendacion para que no aumenten los tamaños y se considere a partir del border o dicho de otra forma
+Se le indica a todos los elementos que calculen su tamaño a partir del borde*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+Recomendacion para CENTRAR el contenido del contenedor
+1. Definir ancho
+2. margin-left: auto;
+   margin-rigth: auto;
+*/
+/* Recomendación para colapasado de los margenes de manera vertical
+Siempre usar margin-bottom
+*/
+/* Proporcion 16:9
+Padding bottom y top, Son relativos al ancho del padre
+Por lo tanto aplicando padding-bottom: 56.25%; se obtiene la proporcion 16:9
+*/
+body{
+    background: var(--colorNegro);
+}
+
+/*
+Selectores Hijos directos 
+li > ul
+ul
+    li
+    li <--
+        ul <--
+            li
+*/
+
+.txtMayusculasB {
+    text-transform: uppercase;
+    color: var(--colorBlanco);
+}
+
+.contendor-hero{
+    width: 100%;
+    height: 410px;
+    background-color: yellow;
+    background: url(../assests/imagenes/battleroyale_lob_mas_dsk_03_0.jpg) center / cover;
+    position: relative;
+  /*   background-position: center;
+    background-size: cover; */
+}
+
+.botonMarvel {
+    position: absolute;
+    width: 110px;
+    height: 48px;
+    margin-left: 65px;
+    margin-top: 240px;
+}
+
+.btn_trianguloSup {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: 0px;
+    border-style: solid;
+    border-color: transparent var(--botonRojo) var(--botonRojo) transparent;
+    border-width: 8px;
+
+}
+
+.btn_trianguloInf {
+    position: absolute;
+    width: 16px;
+    height: 16px; 
+    margin-left: 100%;
+    margin-top: 32px;
+    border-style: solid;
+    border-color: var(--botonRojo)  transparent transparent var(--botonRojo) ;
+    border-width: 8px;
+    /* background-image: repeating-linear-gradient(-45deg,#fff,#fff 1px,transparent 0,transparent 16px) */
+
+}
+
+.btn_cuadroDer {
+    position: absolute;
+    width: 100%;
+    height: 16px; 
+    margin-left: 16px;
+    margin-top: 0px;
+    background-color: var(--botonRojo) ;
+}
+
+.btn_cuadroIzq {
+    position: absolute;
+    width: 100%;
+    height: 16px; 
+    margin-left: 0px;
+    margin-top: 32px;
+    background-color: var(--botonRojo) ;
+}
+
+.btn_central {
+    position: absolute;
+    width: 126px;
+    height: 16px;
+    background-color: var(--botonRojo);
+    margin-left: 0px;
+    margin-top: 16px;
+}
+/**
+.botonMarvel:hover > .btn_cuadroIzq  {
+    background-color: var(--botonRojoHover);
+}
+.btn_cuadroIzq:hover ~ .btn_[*] {
+    background-color: var(--botonRojoHover);
+}*/
