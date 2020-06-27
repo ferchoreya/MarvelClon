@@ -60,6 +60,21 @@ ul
     margin-top: 240px;
 }
 
+.botonMarvel:hover .btn_trianguloSup{
+    border-color: transparent var(--botonRojoHover) var(--botonRojoHover) transparent;
+}
+
+.botonMarvel:hover .btn_trianguloInf {
+    border-color: var(--botonRojoHover)  transparent transparent var(--botonRojoHover) ;
+}
+
+.botonMarvel:hover .btn_cuadroDer,
+.botonMarvel:hover .btn_cuadroIzq,
+.botonMarvel:hover .btn_central{
+    background-color: var(--botonRojoHover) ;
+}
+
+
 .btn_trianguloSup {
     position: absolute;
     width: 16px;
