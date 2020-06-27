@@ -27,16 +27,6 @@ body{
     background: var(--colorNegro);
 }
 
-/*
-Selectores Hijos directos 
-li > ul
-ul
-    li
-    li <--
-        ul <--
-            li
-*/
-
 .txtMayusculasB {
     text-transform: uppercase;
     color: var(--colorBlanco);
@@ -52,83 +42,19 @@ ul
     background-size: cover; */
 }
 
-.botonMarvel {
+button {
+
+    border:none;
+    padding: 1em;
     position: absolute;
-    width: 110px;
+    width: 126px;
     height: 48px;
     margin-left: 65px;
     margin-top: 240px;
+    background-color:var(--botonRojo);
+    clip-path: polygon(13% 0, 100% 0, 100% 65%, 87% 100%, 0 100%, 0 35%);
 }
-
-.botonMarvel:hover .btn_trianguloSup{
-    border-color: transparent var(--botonRojoHover) var(--botonRojoHover) transparent;
-}
-
-.botonMarvel:hover .btn_trianguloInf {
-    border-color: var(--botonRojoHover)  transparent transparent var(--botonRojoHover) ;
-}
-
-.botonMarvel:hover .btn_cuadroDer,
-.botonMarvel:hover .btn_cuadroIzq,
-.botonMarvel:hover .btn_central{
-    background-color: var(--botonRojoHover) ;
-}
-
-
-.btn_trianguloSup {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    margin-left: 0px;
-    border-style: solid;
-    border-color: transparent var(--botonRojo) var(--botonRojo) transparent;
-    border-width: 8px;
-
-}
-
-.btn_trianguloInf {
-    position: absolute;
-    width: 16px;
-    height: 16px; 
-    margin-left: 100%;
-    margin-top: 32px;
-    border-style: solid;
-    border-color: var(--botonRojo)  transparent transparent var(--botonRojo) ;
-    border-width: 8px;
-    /* background-image: repeating-linear-gradient(-45deg,#fff,#fff 1px,transparent 0,transparent 16px) */
-
-}
-
-.btn_cuadroDer {
-    position: absolute;
-    width: 100%;
-    height: 16px; 
-    margin-left: 16px;
-    margin-top: 0px;
-    background-color: var(--botonRojo) ;
-}
-
-.btn_cuadroIzq {
-    position: absolute;
-    width: 100%;
-    height: 16px; 
-    margin-left: 0px;
-    margin-top: 32px;
-    background-color: var(--botonRojo) ;
-}
-
-.btn_central {
-    position: absolute;
-    width: 126px;
-    height: 16px;
-    background-color: var(--botonRojo);
-    margin-left: 0px;
-    margin-top: 16px;
-}
-/**
-.botonMarvel:hover > .btn_cuadroIzq  {
+button:hover {
+    cursor: pointer;
     background-color: var(--botonRojoHover);
 }
-.btn_cuadroIzq:hover ~ .btn_[*] {
-    background-color: var(--botonRojoHover);
-}*/
